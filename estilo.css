@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 1.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3m;
+}
+
+.logo span{
+    color: #A901DB;
+}
+
+.agrupar-formulario{
+    box-shadow: 0 0 20px 0 rgba( 255, 255, 255, .3);
+}
+
+.agrupar-formulario > *{
+    padding: 1em;
+    color: #D8D8D8;
+    word-wrap: break-word;
+}
+
+.formulario-contacto{
+    background: #222222;
+}
+
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.formulario-contacto form label {
+    display: block;
+}
+
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #A901DB;
+    color: #fff;
+    outline: 0;
+}
+
+.formulario-contacto form button{
+    background: #A901DB;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em; 
+}
+
+.formulario-contacto form button:hover,
+.formulario-contacto form button:focus{
+    background: #BF00FF;
+    color: black;
+    cursor: pointer;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.info-contacto{
+    background: #B404AE;
+}
+
+.info-contacto h4,
+.info-contacto ul,
+.info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto ul li{
+    padding: .3em;
+}
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .agrupar-formulario {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .agrupar-formulario > * {
+        padding: 2em;
+    }
+    .info-contacto h4,
+    .info-contacto ul,
+    .info-contacto p {
+        text-align: left;
+    }
+}
